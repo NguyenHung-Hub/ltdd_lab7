@@ -20,5 +20,6 @@ public class MainActivity extends AppCompatActivity {
         db.addPeople(new People(2,"Nguyen Hung 2"));
         db.addPeople(new People(3,"Nguyen Hung 3"));
         db.addPeople(new People(4,"Nguyen Hung 4"));
+        System.out.println("jisdjdkf");
     }
 }
