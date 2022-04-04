@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobileapp"
+    app:startDestination="@id/sqliteFragment">
+
+    <fragment
+        android:id="@+id/sqliteFragment"
+        android:name="com.example.ltdd_lab07.sqliteFragment"
+        android:label="fragment_sqlite"
+        tools:layout="@layout/fragment_sqlite" />
+    <fragment
+        android:id="@+id/travelListFragment"
+        android:name="com.example.ltdd_lab07.TravelListFragment"
+        android:label="fragment_travel_list"
+        tools:layout="@layout/fragment_travel_list" >
+        <action
+            android:id="@+id/action_travelListFragment_to_sqliteFragment"
+            app:destination="@id/sqliteFragment" />
+    </fragment>
+</navigation>
